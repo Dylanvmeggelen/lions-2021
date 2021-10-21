@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalized.css">
+  <link rel="stylesheet" href="css/feedback.css" 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #455A64;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="intro" id="site__start">
+    <div class="logo">
+      <img src="https://www.mobygames.com/images/promo/original/1555312118-2521369790.png" height="50vh" class="logo__item">
+    </div>
+  </div>
+  <header class="header">
+    <div class=menu>
+      <a href="#site__start"> <img src="https://image.flaticon.com/icons/svg/14/14747.svg" class="menu__pic">
+      </a>
+      <ul class="menu__nav">
+        <li><a href="https://www.epicgames.com/store/de/product/satisfactory/home " target="_blank " class="link" title="Download des Spieles ">Download</a></li>
+        <li>-</li>
+        <li><a href="https://www.instagram.com/coffee_stain_studios" target="_blank " class="link">Instagram</a></li>
+        <li>-</li>
+        <li><a href="https://twitter.com/SatisfactoryAF " target="_blank " class="link">Twitter</a></li>
+        <li>-</li>
+        <li><a href="https://satisfactory-calculator.com/de/interactive-map " target="_blank " class="link">Map</a></li>
+      </ul>
+      <div></div>
+    </div>
+  </header>
+  <main>
+
+    <h3>Feedback</h3>
+
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">Vorname</label>
+        <input type="text" id="fname" name="firstname" placeholder="Ihr Vorname..">
+
+        <label for="lname">Nachname</label>
+        <input type="text" id="lname" name="lastname" placeholder="Ihr Nachname..">
+
+        <label for="subject">Bewertung</label>
+        <textarea id="subject" name="subject" placeholder="Ihr Eindruck auf dieser Website" style="height:200px"></textarea>
+
+        <button><a class="button" href="index.html">Bestätigen</a></button>
+      </form>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <ul class="footer__nav">
+      <li class="footer__nav__item"><a href="/index.html">Home</a></li>
+
+    </ul>
+  </footer>
+</body>
+
+</html>
